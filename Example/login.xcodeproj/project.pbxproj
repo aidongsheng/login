@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,10 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AB1C318C491ABC6EE0ED201 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0AB1C318C491ABC6EE0ED201 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1A9FD6CB1E043B7CE9478A18 /* Pods-login_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login_Tests.debug.xcconfig"; path = "Target Support Files/Pods-login_Tests/Pods-login_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B34CF85C82F9D3A3E4A2E6B /* Pods_login_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_login_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F84565B8EB28A0EC4B2CE72 /* login.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = login.podspec; path = ../login.podspec; sourceTree = "<group>"; };
+		4F84565B8EB28A0EC4B2CE72 /* login.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = login.podspec; path = ../login.podspec; sourceTree = "<group>"; };
 		546FDBEFF749935877E78A97 /* Pods-login_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login_Example.release.xcconfig"; path = "Target Support Files/Pods-login_Example/Pods-login_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* login_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = login_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		8898C5FE5A5065977755770F /* Pods-login_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login_Tests.release.xcconfig"; path = "Target Support Files/Pods-login_Tests/Pods-login_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		92EACDB5DCCA9261D8C663AE /* Pods-login_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login_Example.debug.xcconfig"; path = "Target Support Files/Pods-login_Example/Pods-login_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C352FFCC3F5E22C70CE53076 /* Pods_login_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_login_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED0588415BD9F582DF9B8776 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		ED0588415BD9F582DF9B8776 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				1A9FD6CB1E043B7CE9478A18 /* Pods-login_Tests.debug.xcconfig */,
 				8898C5FE5A5065977755770F /* Pods-login_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				18E5626F43E048D508DB42A5 /* [CP] Embed Pods Frameworks */,
+				950EC9EF271186CB916F4871 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,13 +247,16 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = aidongsheng;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = B74XK883LC;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "login" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -295,7 +297,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18E5626F43E048D508DB42A5 /* [CP] Embed Pods Frameworks */ = {
+		950EC9EF271186CB916F4871 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -498,11 +500,12 @@
 			baseConfigurationReference = 92EACDB5DCCA9261D8C663AE /* Pods-login_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B74XK883LC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "login/login-Prefix.pch";
 				INFOPLIST_FILE = "login/login-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.login;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -513,11 +516,12 @@
 			baseConfigurationReference = 546FDBEFF749935877E78A97 /* Pods-login_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B74XK883LC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "login/login-Prefix.pch";
 				INFOPLIST_FILE = "login/login-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.login;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

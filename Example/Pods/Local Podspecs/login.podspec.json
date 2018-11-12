@@ -1,0 +1,27 @@
+{
+  "name": "login",
+  "version": "0.1.0",
+  "summary": "A short description of login.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/aidongsheng/login",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "aidongsheng": "coding_ai@wochacha.com"
+  },
+  "source": {
+    "git": "https://github.com/aidongsheng/login.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "login/Classes/**/*",
+  "resource_bundles": {
+    "login": [
+      "login/Assets/*.png"
+    ]
+  }
+}
